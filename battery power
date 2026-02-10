@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() {
+    int per;
+    scanf("%d",&per);
+    if(per<20)
+    printf("low battery");
+    else
+    printf("battery ok");
+    return 0;
+}
