@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+   int rupees;
+   scanf("%d",&rupees);
+   if(rupees>=499)
+   printf("free deliviry");
+   else 
+   printf("delivery charges apply");
+
+    
+    return 0;
+}
