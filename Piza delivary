@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+    int delay;
+
+    printf("Enter delay time in minutes: ");
+    scanf("%d", &delay);
+
+    int category;
+
+    if (delay == 0)
+        category = 0;
+    else if (delay <= 10)
+        category = 1;
+    else if (delay <= 30)
+        category = 2;
+    else
+        category = 3;
+
+    switch(category) {
+        case 0:
+            printf("On time delivery\n");
+            break;
+        case 1:
+            printf("Slight delay - Sorry for inconvenience\n");
+            break;
+        case 2:
+            printf("Late delivery - Discount will be provided\n");
+            break;
+        case 3:
+            printf("Very late - Free pizza offered\n");
+            break;
+        default:
+            printf("Invalid input\n");
+    }
+
+    return 0;
+}
